@@ -1,7 +1,3 @@
-//Q4. Build a function that will create a cookie called ‘testopt’. 
-//The contents of this cookie should be populated with the contents of the cookie called ‘optimizelyenduserid’. 
-//The cookie should expire in 30 days time.  
-
 function articleCookieCreator() {
 
     var xhr = new XMLHttpRequest();
@@ -21,7 +17,14 @@ function articleCookieCreator() {
             function getCookieData() {
                 //there does not seem to be a cookie present called 'optimizelyenduserid'
                 //unsure how to retreive cookie data from external website (I don't think it is permitted), to then save onto mine
-                optimizelyenduserid = ('desired cookie content')
+
+                const cookiesArray = document.cookie.split(";")
+
+                const targetCookie = cookiesArray.filter(keyword => keyword.includes('optimizelyenduserid'))
+
+                const cookieKeyValue = targetCookie.toString().split('=')
+
+                optimizelyenduserid = cookieKeyValue[1]
             }
 
 
