@@ -5,7 +5,7 @@
 
 function articlePremiumCheck() {
 
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.telegraph.co.uk/business/2018/04/27/pound-slips-six-week-low-markets-brace-growth-slowdown-uk-us", true);
     xhr.responseType = "document";

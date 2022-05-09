@@ -3,7 +3,7 @@
 
 function articleKeywordLocator() {
 
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.telegraph.co.uk/news/2018/04/27/prince-louis-arthur-charles-new-royal-baby-name-announced-duke/", true);
     xhr.responseType = "document";

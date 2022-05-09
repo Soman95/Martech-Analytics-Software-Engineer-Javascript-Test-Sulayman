@@ -3,7 +3,7 @@
 
 function articleIDRetriever() {
 
-    var xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/https://www.telegraph.co.uk/news/2018/04/27/kim-jong-un-becomes-first-north-korean-leader-cross-south-65", true);
     xhr.responseType = "document";
